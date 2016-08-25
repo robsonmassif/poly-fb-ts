@@ -1,0 +1,25 @@
+{
+  "name": "pixels",
+  "description": "drawin some pixels",
+  "main": "index.html",
+  "authors": [
+    "robsonmassif <robson.massif@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-elements": "^1.0.10",
+    "neon-elements": "^1.0.0",
+    "paper-elements": "^1.0.7",
+    "polymer-ts": "^0.1.28",
+    "polymer": "^1.6.1"
+  }
+}
