@@ -4,9 +4,12 @@
   "description": "drawin some pixels",
   "main": "index.html",
   "dependencies": {
+    "@types/es6-promise": "0.0.31",
     "bower": "^1.7.9",
     "firebase-tools": "^3.0.7",
     "gulp-cli": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6",
     "typescript": "^1.8.10"
   },
   "devDependencies": {},
