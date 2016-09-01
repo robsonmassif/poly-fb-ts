@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
 var tsc = require('gulp-typescript');
 
-
 var typescriptOptions = {
   target: 'ES5',
   //module: 'ES6',
@@ -22,3 +21,5 @@ gulp.task('compile-ts', function() {
     .pipe(gulp.dest('app'));
 
 });
+
+
