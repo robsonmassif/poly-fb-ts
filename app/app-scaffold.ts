@@ -56,9 +56,6 @@ class AppScaffold extends polymer.Base {
   })
   foo: {R: number, G: number, B: number};
 
-  @property({type: String, value: "default"})
-  bar: string;
-
   ready() {
     console.log("Scaffold Ready!", this.foo);
   }
