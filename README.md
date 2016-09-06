@@ -10,3 +10,5 @@ npm install
 jspm install
 
 bower install
+
+create fb-config.json file with all the apiKey stuff

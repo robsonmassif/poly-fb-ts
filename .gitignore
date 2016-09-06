@@ -6,3 +6,5 @@ app/*.js
 
 .firebaserc
 public/
+fb-config.json
+/build
