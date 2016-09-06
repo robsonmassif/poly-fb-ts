@@ -18,8 +18,6 @@ var typescriptOptions = {
   noEmitOnError: true
 };
 
-
-
 gulp.task('compile-ts', function() {
 
   var tsResult = gulp.src(['app/**/*.ts', 'typings/**/*.ts'])
@@ -45,6 +43,10 @@ gulp.task('replace-keys', function () {
           match: 'database-url',
           replacement: conf.databaseURL
         },
+        {
+          match: 'develop-here',
+          replacement: 'built'
+        }
       ]
     }))
     .pipe(gulp.dest('build'));
