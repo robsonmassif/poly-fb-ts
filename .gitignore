@@ -7,6 +7,6 @@ app/*.js
 .firebaserc
 fb-config.json
 
-public/
+public/*
 !sw-import.js
 !manifest.json
