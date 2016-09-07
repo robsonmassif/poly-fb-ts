@@ -56,6 +56,28 @@ class AppScaffold extends polymer.Base {
   })
   foo: {R: number, G: number, B: number};
 
+  @property({type: Boolean, value: false})
+  signedIn: boolean;
+
+
+  @computed()
+  computeLockIcon(signedIn) {
+     if (signedIn) {
+      return 'lock-open';
+     }
+     else {
+      return 'lock';
+     }
+  }
+
+  lock(event) {
+    this.fire('sign-out');
+  }
+
+  signIn(event) {
+    this.fire('sign-in', null, { bubbles: false });
+  }
+
   ready() {
     console.log("Scaffold Ready!", this.foo);
   }

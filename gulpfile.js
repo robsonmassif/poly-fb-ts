@@ -22,7 +22,7 @@ gulp.task('compile-ts', function() {
 
   var tsResult = gulp.src(['app/**/*.ts', 'typings/**/*.ts'])
     .pipe(tsc(typescriptOptions))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('public'));
 
 });
 
@@ -49,9 +49,9 @@ gulp.task('replace-keys', function () {
         }
       ]
     }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('build', ['compile-ts', 'replace-keys']);
 
-gulp.task('clean', del.bind(null, ['build']));
+//gulp.task('clean', del.bind(null, ['build']));
