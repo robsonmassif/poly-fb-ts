@@ -10,3 +10,5 @@ fb-config.json
 public/*
 !sw-import.js
 !manifest.json
+
+.DS_Store
