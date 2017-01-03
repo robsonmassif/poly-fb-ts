@@ -23,7 +23,6 @@ class AppScaffold extends polymer.Base {
     console.log(this.$.auth);
     this.$.auth.signInWithPopup();
   }
-
 }
 
 AppScaffold.register();
