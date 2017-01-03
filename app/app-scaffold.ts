@@ -16,7 +16,7 @@ class AppScaffold extends polymer.Base {
   }
 
   lock(event) {
-    this.fire('sign-out');
+    this.$.auth.signOut();
   }
 
   signIn(event) {
