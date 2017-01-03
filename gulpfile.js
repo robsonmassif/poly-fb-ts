@@ -50,6 +50,10 @@ gulp.task('replace-keys', function () {
         {
           match: 'develop-here',
           replacement: 'built'
+        },
+        {
+          match: 'client-id',
+          replacement: conf.clientID
         }
       ]
     }))
