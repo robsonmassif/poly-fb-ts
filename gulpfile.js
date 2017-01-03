@@ -32,6 +32,10 @@ gulp.task('replace-keys', function () {
     .pipe(replace({
       patterns: [
         {
+          match: 'name',
+          replacement: conf.name
+        },
+        {
           match: 'api-key',
           replacement: conf.apiKey
         },
