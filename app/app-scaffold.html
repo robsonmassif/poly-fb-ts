@@ -20,8 +20,10 @@ Things for holding the whole app
 
     <firebase-auth
       id="auth"
-      app-name="pixel"
-      provider="google">
+      app-name="pixelBoss"
+      provider="google"
+      signed-in="{{signedIn}}"
+      user="{{user}}">
     </firebase-auth>
     <!--TODO: Factor out toolbar-->
     <paper-toolbar>
@@ -36,7 +38,6 @@ Things for holding the whole app
               on-tap="signIn">
       </paper-icon-button>
     </paper-toolbar>
-    <pixel-grid arg="{{foo}}"></pixel-grid>
   </template>
   <script src="app-scaffold.js">
   </script>
