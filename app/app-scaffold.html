@@ -20,11 +20,19 @@ Things for holding the whole app
 
     <firebase-auth
       id="auth"
-      app-name="pixelBoss"
+      app-name=@@name
       provider="google"
       signed-in="{{signedIn}}"
       user="{{user}}">
     </firebase-auth>
+
+    <firebase-document
+      id="query"
+      app-name=@@name
+      path="/notes/[[user.uid]]"
+      data="{{data}}">
+    </firebase-document>
+
     <!--TODO: Factor out toolbar-->
     <paper-toolbar>
       <span class="title">Pixel Toolbar</span>
@@ -36,6 +44,10 @@ Things for holding the whole app
       <paper-icon-button
         icon="account-circle"
         on-tap="signIn">
+      </paper-icon-button>
+      <paper-icon-button
+        icon="favorite"
+        on-tap="checkData">
       </paper-icon-button>
     </paper-toolbar>
   </template>

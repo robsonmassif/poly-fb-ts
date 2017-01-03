@@ -19,6 +19,11 @@ class AppScaffold extends polymer.Base {
     this.$.auth.signOut();
   }
 
+  checkData() {
+    console.log(this.$.auth.user.uid);
+    console.log(this.$.query.data);
+  }
+
   signIn(event) {
     console.log(this.$.auth);
     this.$.auth.signInWithPopup();
