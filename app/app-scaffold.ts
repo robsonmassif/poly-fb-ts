@@ -21,6 +21,7 @@ class AppScaffold extends polymer.Base {
 
   checkData() {
     console.log(this.$.auth.user.uid);
+    console.log('token: ', this.$.auth.user.getToken());
     console.log(this.$.query.data);
   }
 
